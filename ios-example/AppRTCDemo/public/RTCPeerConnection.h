@@ -68,25 +68,25 @@
 
 // Create a new offer.
 // Success or failure will be reported via RTCSessionDescriptonDelegate.
-- (void)createOfferWithDelegate:(id<RTCSessionDescriptonDelegate>)delegate
+- (void)createOfferWithDelegate:(id <RTCSessionDescriptonDelegate>)delegate
                     constraints:(RTCMediaConstraints *)constraints;
 
 // Create an answer to an offer.
 // Success or failure will be reported via RTCSessionDescriptonDelegate.
-- (void)createAnswerWithDelegate:(id<RTCSessionDescriptonDelegate>)delegate
+- (void)createAnswerWithDelegate:(id <RTCSessionDescriptonDelegate>)delegate
                      constraints:(RTCMediaConstraints *)constraints;
 
 // Sets the local session description.
 // Success or failure will be reported via RTCSessionDescriptonDelegate.
 - (void)
-    setLocalDescriptionWithDelegate:(id<RTCSessionDescriptonDelegate>)delegate
-                 sessionDescription:(RTCSessionDescription *)sdp;
+setLocalDescriptionWithDelegate:(id <RTCSessionDescriptonDelegate>)delegate
+             sessionDescription:(RTCSessionDescription *)sdp;
 
 // Sets the remote session description.
 // Success or failure will be reported via RTCSessionDescriptonDelegate.
 - (void)
-    setRemoteDescriptionWithDelegate:(id<RTCSessionDescriptonDelegate>)delegate
-                  sessionDescription:(RTCSessionDescription *)sdp;
+setRemoteDescriptionWithDelegate:(id <RTCSessionDescriptonDelegate>)delegate
+              sessionDescription:(RTCSessionDescription *)sdp;
 
 // Restarts or updates the ICE Agent process of gathering local candidates
 // and pinging remote candidates.
@@ -102,9 +102,11 @@
 // TODO(hughv): Implement GetStats.
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
+
 // Disallow init and don't add to documentation
 - (id)init __attribute__(
-    (unavailable("init is not a supported initializer for this class.")));
+(unavailable("init is not a supported initializer for this class.")));
+
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
 @end

@@ -32,7 +32,7 @@
 
 // RTCVideoRendererDelegate is a protocol for an object that must be
 // implemented to get messages when rendering.
-@protocol RTCVideoRendererDelegate<NSObject>
+@protocol RTCVideoRendererDelegate <NSObject>
 
 // The size of the frame.
 - (void)videoRenderer:(RTCVideoRenderer *)videoRenderer setSize:(CGSize)size;

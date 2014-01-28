@@ -37,9 +37,11 @@
 - (id)initWithKey:(NSString *)key value:(NSString *)value;
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
+
 // Disallow init and don't add to documentation
 - (id)init __attribute__(
-    (unavailable("init is not a supported initializer for this class.")));
+(unavailable("init is not a supported initializer for this class.")));
+
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
 @end

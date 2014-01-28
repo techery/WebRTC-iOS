@@ -33,24 +33,26 @@
 // If present, this contains the identifier of the "media stream
 // identification" as defined in [RFC 3388] for m-line this candidate is
 // associated with.
-@property(nonatomic, copy, readonly) NSString* sdpMid;
+@property(nonatomic, copy, readonly) NSString *sdpMid;
 
 // This indicates the index (starting at zero) of m-line in the SDP this
 // candidate is associated with.
 @property(nonatomic, assign, readonly) NSInteger sdpMLineIndex;
 
 // Creates an SDP-ized form of this candidate.
-@property(nonatomic, copy, readonly) NSString* sdp;
+@property(nonatomic, copy, readonly) NSString *sdp;
 
 // Creates an ICECandidateInterface based on SDP string.
-- (id)initWithMid:(NSString*)sdpMid
+- (id)initWithMid:(NSString *)sdpMid
             index:(NSInteger)sdpMLineIndex
-              sdp:(NSString*)sdp;
+              sdp:(NSString *)sdp;
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
+
 // Disallow init and don't add to documentation
 - (id)init __attribute__((
-    unavailable("init is not a supported initializer for this class.")));
+unavailable("init is not a supported initializer for this class.")));
+
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
 @end

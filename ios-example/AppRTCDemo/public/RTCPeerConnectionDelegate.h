@@ -35,7 +35,7 @@
 
 // RTCPeerConnectionDelegate is a protocol for an object that must be
 // implemented to get messages from PeerConnection.
-@protocol RTCPeerConnectionDelegate<NSObject>
+@protocol RTCPeerConnectionDelegate <NSObject>
 
 // Triggered when there is an error.
 - (void)peerConnectionOnError:(RTCPeerConnection *)peerConnection;
@@ -50,7 +50,7 @@
 
 // Triggered when a remote peer close a stream.
 - (void)peerConnection:(RTCPeerConnection *)peerConnection
-        removedStream:(RTCMediaStream *)stream;
+         removedStream:(RTCMediaStream *)stream;
 
 // Triggered when renegotation is needed, for example the ICE has restarted.
 - (void)peerConnectionOnRenegotiationNeeded:(RTCPeerConnection *)peerConnection;
@@ -65,6 +65,6 @@
 
 // New Ice candidate have been found.
 - (void)peerConnection:(RTCPeerConnection *)peerConnection
-        gotICECandidate:(RTCICECandidate *)candidate;
+       gotICECandidate:(RTCICECandidate *)candidate;
 
 @end

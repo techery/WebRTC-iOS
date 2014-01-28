@@ -37,9 +37,9 @@
 #import "GAEChannelClient.h"
 
 // Called when there are RTCICEServers.
-@protocol ICEServerDelegate<NSObject>
+@protocol ICEServerDelegate <NSObject>
 
-- (void)onICEServers:(NSArray*)servers;
+- (void)onICEServers:(NSArray *)servers;
 
 @end
 
@@ -50,12 +50,13 @@
 // call connectToRoom().  apprtc.appspot.com will signal that is successful via
 // onOpen through the browser channel.  Then you should call sendData() and wait
 // for the registered handler to be called with received messages.
-@interface APPRTCAppClient : NSObject<NSURLConnectionDataDelegate>
+@interface APPRTCAppClient : NSObject <NSURLConnectionDataDelegate>
 
-@property(nonatomic, assign) id<ICEServerDelegate> ICEServerDelegate;
-@property(nonatomic, assign) id<GAEMessageHandler> messageHandler;
+@property(nonatomic, assign) id <ICEServerDelegate> ICEServerDelegate;
+@property(nonatomic, assign) id <GAEMessageHandler> messageHandler;
 
 - (void)connectToRoom:(NSURL *)room;
+
 - (void)sendData:(NSData *)data;
 
 @end

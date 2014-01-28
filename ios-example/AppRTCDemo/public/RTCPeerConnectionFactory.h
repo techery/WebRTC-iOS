@@ -42,15 +42,16 @@
 
 // Initialize & de-initialize the SSL subsystem.  Failure is fatal.
 + (void)initializeSSL;
+
 + (void)deinitializeSSL;
 
 // Create an RTCPeerConnection object.   RTCPeerConnectionFactory will create
 // required libjingle threads, socket and network manager factory classes for
 // networking.
 - (RTCPeerConnection *)
-    peerConnectionWithICEServers:(NSArray *)servers
-                     constraints:(RTCMediaConstraints *)constraints
-                        delegate:(id<RTCPeerConnectionDelegate>)delegate;
+peerConnectionWithICEServers:(NSArray *)servers
+                 constraints:(RTCMediaConstraints *)constraints
+                    delegate:(id <RTCPeerConnectionDelegate>)delegate;
 
 // Create an RTCMediaStream named |label|.
 - (RTCMediaStream *)mediaStreamWithLabel:(NSString *)label;

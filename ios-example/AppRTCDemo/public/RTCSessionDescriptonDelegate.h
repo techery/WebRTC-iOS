@@ -30,20 +30,20 @@
 @class RTCPeerConnection;
 @class RTCSessionDescription;
 
-extern NSString* const kRTCSessionDescriptionDelegateErrorDomain;
+extern NSString *const kRTCSessionDescriptionDelegateErrorDomain;
 extern int const kRTCSessionDescriptionDelegateErrorCode;
 
 // RTCSessionDescriptonDelegate is a protocol for listening to callback messages
 // when RTCSessionDescriptions are created or set.
-@protocol RTCSessionDescriptonDelegate<NSObject>
+@protocol RTCSessionDescriptonDelegate <NSObject>
 
 // Called when creating a session.
-- (void)peerConnection:(RTCPeerConnection *)peerConnection
-    didCreateSessionDescription:(RTCSessionDescription *)sdp
-                          error:(NSError *)error;
+- (void)     peerConnection:(RTCPeerConnection *)peerConnection
+didCreateSessionDescription:(RTCSessionDescription *)sdp
+                      error:(NSError *)error;
 
 // Called when setting a local or remote description.
-- (void)peerConnection:(RTCPeerConnection *)peerConnection
-    didSetSessionDescriptionWithError:(NSError *)error;
+- (void)           peerConnection:(RTCPeerConnection *)peerConnection
+didSetSessionDescriptionWithError:(NSError *)error;
 
 @end

@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="22792ecb-f678-44fb-a264-4f5fc65a616c" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/APPRTCAppClient.h" afterPath="$PROJECT_DIR$/AppRTCDemo/APPRTCAppClient.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/APPRTCAppClient.m" afterPath="$PROJECT_DIR$/AppRTCDemo/APPRTCAppClient.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.h" afterPath="$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.m" afterPath="$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/APPRTCViewController.h" afterPath="$PROJECT_DIR$/AppRTCDemo/APPRTCViewController.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/APPRTCViewController.m" afterPath="$PROJECT_DIR$/AppRTCDemo/APPRTCViewController.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/en.lproj/APPRTCViewController.xib" afterPath="$PROJECT_DIR$/AppRTCDemo/en.lproj/APPRTCViewController.xib" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/AppRTCDemo-Info.plist" afterPath="$PROJECT_DIR$/AppRTCDemo/AppRTCDemo-Info.plist" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/GAEChannelClient.h" afterPath="$PROJECT_DIR$/AppRTCDemo/GAEChannelClient.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/GAEChannelClient.m" afterPath="$PROJECT_DIR$/AppRTCDemo/GAEChannelClient.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCAudioSource.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCAudioSource.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCAudioTrack.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCAudioTrack.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCICECandidate.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCICECandidate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCICEServer.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCICEServer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCMediaSource.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCMediaSource.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCMediaStream.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCMediaStream.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCMediaStreamTrack.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCMediaStreamTrack.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCPair.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCPair.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCPeerConnection.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCPeerConnection.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCPeerConnectionDelegate.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCPeerConnectionDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCPeerConnectionFactory.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCPeerConnectionFactory.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCSessionDescription.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCSessionDescription.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCSessionDescriptonDelegate.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCSessionDescriptonDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCTypes.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCTypes.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoCapturer.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoCapturer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoRenderer.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoRenderer.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoRendererDelegate.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoRendererDelegate.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoSource.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoSource.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoTrack.h" afterPath="$PROJECT_DIR$/AppRTCDemo/public/RTCVideoTrack.h" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/ios_channel.html" afterPath="$PROJECT_DIR$/AppRTCDemo/ios_channel.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo/main.m" afterPath="$PROJECT_DIR$/AppRTCDemo/main.m" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AppRTCDemo.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/AppRTCDemo.xcodeproj/project.pbxproj" />
+    </list>
+    <ignored path="ios-example.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_5c44e69ef05474a989095f770286edde6be93fb9" />
+  <component name="FavoritesManager">
+    <favorites_list name="AppRTCDemo" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="APPRTCAppDelegate.h" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="43" column="40" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="960">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="APPRTCAppDelegate.m" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.m">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="178" column="20" selection-start="5735" selection-end="5735" vertical-scroll-proportion="3.6878452" vertical-offset="0" max-vertical-offset="5655">
+              <folding>
+                <element signature="e#0#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/AppRTCDemo/APPRTCViewController.h" />
+        <option value="$PROJECT_DIR$/AppRTCDemo/APPRTCViewController.m" />
+        <option value="$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.h" />
+        <option value="$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.m" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppRTCDemo" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeRootNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppRTCDemo" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AppRTCDemo" />
+              <option name="myItemType" value="com.jetbrains.cidr.projectView.XcodeViewNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Cidr.FilesView" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="true" />
+  </component>
+  <component name="RunManager" selected="Application.AppRTCDemo">
+    <configuration default="true" type="AppleRunConfiguration" factoryName="Application" PROJECT_NAME="AppRTCDemo" TARGET_NAME="AppRTCDemo" CONFIG_NAME="Debug" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="AppRTCDemo" RUN_TARGET_NAME="AppRTCDemo" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="AppRTCDemo" type="AppleRunConfiguration" factoryName="Application" SCHEME_NAME="AppRTCDemo" PROJECT_NAME="AppRTCDemo" TARGET_NAME="AppRTCDemo" CONFIG_NAME="Debug" WORKING_DIR="" PASS_PARENT_ENVS="FALSE" RUN_TARGET_PROJECT_NAME="AppRTCDemo" RUN_TARGET_NAME="AppRTCDemo" MAKE_ACTIVE="TRUE" WAIT_FOR="FALSE">
+      <envs />
+      <RunnerSettings RunnerId="AppRunner" />
+      <ConfigurationWrapper RunnerId="AppRunner" />
+      <method />
+    </configuration>
+    <list size="1">
+      <item index="0" class="java.lang.String" itemvalue="Application.AppRTCDemo" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/AppRTCDemo/public" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$/AppRTCDemo/public" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="22792ecb-f678-44fb-a264-4f5fc65a616c" name="Default" comment="" />
+      <created>1390576447757</created>
+      <updated>1390576447757</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="0" height="0" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287483" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.0" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.0" sideWeight="0.0" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/AppRTCDemo/APPRTCViewController.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="38" column="0" selection-start="1633" selection-end="1633" vertical-scroll-proportion="0.6323319" vertical-offset="128" max-vertical-offset="840">
+          <folding>
+            <element signature="e#1520#1543#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppRTCDemo/APPRTCViewController.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="27" selection-start="1233" selection-end="1233" vertical-scroll-proportion="0.7296137" vertical-offset="0" max-vertical-offset="900">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="40" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="960">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AppRTCDemo/APPRTCAppDelegate.m">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="178" column="20" selection-start="5735" selection-end="5735" vertical-scroll-proportion="3.6878452" vertical-offset="0" max-vertical-offset="5655">
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+

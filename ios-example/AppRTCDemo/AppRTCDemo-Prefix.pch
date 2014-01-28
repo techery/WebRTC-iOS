@@ -36,5 +36,31 @@
 #warning "This project uses features only available in iOS SDK 6.0 and later."
 #endif
 
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+    
+#ifdef __OBJC__
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+    
+#import "RTCICECandidate.h"
+#import "RTCMediaConstraints.h"
+#import "RTCMediaStream.h"
+#import "RTCPair.h"
+#import "RTCPeerConnection.h"
+#import "RTCPeerConnectionFactory.h"
+#import "RTCSessionDescription.h"
+    
+#import "RTCSessionDescriptonDelegate.h"
+#import "RTCVideoTrack.h"
+    
+#define READ_TIMEOUT 10
+#define READ_TIMEOUT_EXTENSION 10
+#endif
+    
+#ifdef __cplusplus
+}
+#endif

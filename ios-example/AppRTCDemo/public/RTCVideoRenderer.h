@@ -39,25 +39,29 @@ struct CGRect;
 // Interface for rendering VideoFrames from a VideoTrack
 @interface RTCVideoRenderer : NSObject
 
-@property(nonatomic, strong) id<RTCVideoRendererDelegate> delegate;
+@property(nonatomic, strong) id <RTCVideoRendererDelegate> delegate;
 
 // A convenience method to create a renderer and window and render frames into
 // that window.
 + (RTCVideoRenderer *)videoRenderGUIWithFrame:(CGRect)frame;
-+ (UIView<RTCVideoRenderView> *)newRenderViewWithFrame:(CGRect)frame; //This UIView conforms to RTCVideoRendererDelegate
-- (id)initWithRenderView:(UIView<RTCVideoRenderView> *)renderView; //This must be one of the views from newRenderViewWithFrame:
+
++ (UIView <RTCVideoRenderView> *)newRenderViewWithFrame:(CGRect)frame; //This UIView conforms to RTCVideoRendererDelegate
+- (id)initWithRenderView:(UIView <RTCVideoRenderView> *)renderView; //This must be one of the views from newRenderViewWithFrame:
 
 // Initialize the renderer.  Requires a delegate which does the actual drawing
 // of frames.
-- (id)initWithDelegate:(id<RTCVideoRendererDelegate>)delegate;
+- (id)initWithDelegate:(id <RTCVideoRendererDelegate>)delegate;
 
 - (BOOL)start;
+
 - (BOOL)stop;
 
 #ifndef DOXYGEN_SHOULD_SKIP_THIS
+
 // Disallow init and don't add to documentation
 - (id)init __attribute__(
-    (unavailable("init is not a supported initializer for this class.")));
+(unavailable("init is not a supported initializer for this class.")));
+
 #endif /* DOXYGEN_SHOULD_SKIP_THIS */
 
 @end

@@ -17,12 +17,12 @@
 @interface VideoView () {
     UIInterfaceOrientation _videoOrientation;
     UIColor *_color;
-    
+
     RTCVideoTrack *_track;
     RTCVideoRenderer *_renderer;
 }
-@property (nonatomic, retain) UIView<RTCVideoRenderView> *renderView;
-@property (nonatomic, retain) UIImageView *placeholderView;
+@property(nonatomic, retain) UIView <RTCVideoRenderView> *renderView;
+@property(nonatomic, retain) UIImageView *placeholderView;
 @end
 
 @implementation VideoView
@@ -31,28 +31,28 @@
 #define VIDEO_HEIGHT 640
 
 static void init(VideoView *self) {
-    
+
     //** not sure if this frame size does anything...
-    UIView<RTCVideoRenderView> *renderView = [RTCVideoRenderer newRenderViewWithFrame:CGRectMake(200, 100, 240, 180)];
+    UIView <RTCVideoRenderView> *renderView = [RTCVideoRenderer newRenderViewWithFrame:CGRectMake(200, 100, 240, 180)];
     [self setRenderView:renderView];
     UIImageView *placeholderView = [[UIImageView alloc] initWithFrame:[renderView frame]];
     [self setPlaceholderView:placeholderView];
     NSDictionary *views = NSDictionaryOfVariableBindings(renderView, placeholderView);
     NSDictionary *metrics = @{@"VIDEO_WIDTH" : @(VIDEO_WIDTH), @"VIDEO_HEIGHT" : @(VIDEO_HEIGHT)};
-    
+
     [placeholderView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:placeholderView];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:placeholderView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:placeholderView attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
 
-    
+
     [renderView setTranslatesAutoresizingMaskIntoConstraints:NO];
     [self addSubview:renderView];
     [renderView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:[renderView(VIDEO_WIDTH)]" options:0 metrics:metrics views:views]];
     [renderView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"V:[renderView(VIDEO_HEIGHT)]" options:0 metrics:metrics views:views]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterX relatedBy:NSLayoutRelationEqual toItem:renderView attribute:NSLayoutAttributeCenterX multiplier:1 constant:0]];
     [self addConstraint:[NSLayoutConstraint constraintWithItem:self attribute:NSLayoutAttributeCenterY relatedBy:NSLayoutRelationEqual toItem:renderView attribute:NSLayoutAttributeCenterY multiplier:1 constant:0]];
-    
+
 
     //** rounded corners of frame
     // [[self layer] setCornerRadius:VIDEO_HEIGHT/2.0];
@@ -61,8 +61,7 @@ static void init(VideoView *self) {
 
 }
 
-- (id)initWithFrame:(CGRect)frame
-{
+- (id)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if (self) {
         init(self);
@@ -70,7 +69,7 @@ static void init(VideoView *self) {
     return self;
 }
 
--(id)initWithCoder:(NSCoder *)aDecoder {
+- (id)initWithCoder:(NSCoder *)aDecoder {
     self = [super initWithCoder:aDecoder];
     if (self) {
         init(self);
@@ -78,7 +77,7 @@ static void init(VideoView *self) {
     return self;
 }
 
--(UIImage *)placeholderImage {
+- (UIImage *)placeholderImage {
     return [[self placeholderView] image];
 }
 
@@ -90,7 +89,7 @@ static void init(VideoView *self) {
     return _videoOrientation;
 }
 
--(CGSize)intrinsicContentSize {
+- (CGSize)intrinsicContentSize {
     // We add a bit of a buffer to keep the video from showing out of our border
     CGFloat borderSize = 0; //[[self layer] borderWidth];
     return CGSizeMake(VIDEO_HEIGHT + borderSize - 1, VIDEO_HEIGHT + borderSize - 1);
@@ -99,7 +98,7 @@ static void init(VideoView *self) {
 - (void)setVideoOrientation:(UIInterfaceOrientation)videoOrientation {
     if (_videoOrientation != videoOrientation) {
         _videoOrientation = videoOrientation;
-                
+
         CGFloat angle;
         switch (videoOrientation) {
             case UIInterfaceOrientationPortrait:
@@ -124,9 +123,9 @@ static void init(VideoView *self) {
 
 - (void)renderVideoTrackInterface:(RTCVideoTrack *)videoTrack {
     [self stop:nil];
-    
+
     _track = videoTrack;
-    
+
     if (_track) {
         if (!_renderer) {
             _renderer = [[RTCVideoRenderer alloc] initWithRenderView:[self renderView]];
@@ -188,14 +187,13 @@ static void init(VideoView *self) {
         }
 }
 #endif
-      
-      
-      
--(void)pause:(id)sender {
+
+
+- (void)pause:(id)sender {
     [_renderer stop];
 }
 
--(void)resume:(id)sender {
+- (void)resume:(id)sender {
     [_renderer start];
 }
 
