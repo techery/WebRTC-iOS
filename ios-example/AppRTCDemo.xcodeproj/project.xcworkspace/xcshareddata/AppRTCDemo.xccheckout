@@ -5,34 +5,34 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>EC07846D-E3F8-4EBB-B32E-9C22FE0CEB22</string>
+	<string>EDCEEF66-412F-4AA0-BA46-F68B693BF6D6</string>
 	<key>IDESourceControlProjectName</key>
 	<string>AppRTCDemo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>6EBCAFE9-6EAE-47ED-86B8-876CB9EDA3AB</key>
-		<string>https://github.com/gandg/webrtc-ios.git</string>
+		<key>CF26729B-CF61-4223-924F-47B8492C4692</key>
+		<string>ssh://bitbucket.org/techery/webrtc-ios.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>ios-example/AppRTCDemo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>6EBCAFE9-6EAE-47ED-86B8-876CB9EDA3AB</key>
+		<key>CF26729B-CF61-4223-924F-47B8492C4692</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/gandg/webrtc-ios.git</string>
+	<string>ssh://bitbucket.org/techery/webrtc-ios.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>6EBCAFE9-6EAE-47ED-86B8-876CB9EDA3AB</string>
+	<string>CF26729B-CF61-4223-924F-47B8492C4692</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>6EBCAFE9-6EAE-47ED-86B8-876CB9EDA3AB</string>
+			<string>CF26729B-CF61-4223-924F-47B8492C4692</string>
 			<key>IDESourceControlWCCName</key>
 			<string>webrtc-ios</string>
 		</dict>

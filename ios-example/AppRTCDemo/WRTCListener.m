@@ -13,9 +13,14 @@
 
 - (void)onSDPSet
 {
-    [self.peerConnection createAnswerWithDelegate:self constraints:self.constraints];
+    if (!self.peerConnection.localDescription) {
+        [self.peerConnection createAnswerWithDelegate:self constraints:self.constraints];
+    }
 }
 
-
+- (BOOL)isAudioEnabled
+{
+    return NO;
+}
 
 @end

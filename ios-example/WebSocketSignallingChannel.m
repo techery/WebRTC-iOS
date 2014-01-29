@@ -25,7 +25,7 @@
     if (self) {
         self.delegate = delegate;
         
-        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"ws://%@/signalling", aIP]];
+        NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"ws://%@:10000/signalling", aIP]];
         NSURLRequest *req = [NSURLRequest requestWithURL:url];
         
         self.socket = [[SRWebSocket alloc] initWithURLRequest:req];

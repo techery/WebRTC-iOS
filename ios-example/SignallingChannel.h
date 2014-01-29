@@ -24,6 +24,7 @@
 
 - (id)initWithIP:(NSString *)aIP delegate:(id<SignallingChannelDelegate>)delegate;
 - (void)post:(NSDictionary*)message;
+- (void)start;
 
 @end
 

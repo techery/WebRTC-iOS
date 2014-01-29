@@ -21,6 +21,12 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN | HTTP_LOG_FLAG_TRACE;
     }
 }
 
+- (void)didOpen
+{
+    [super didOpen];
+    [self.delegate channelConected:self];
+}
+
 - (void)didClose
 {
     [super didClose];
@@ -38,5 +44,6 @@ static const int httpLogLevel = HTTP_LOG_LEVEL_WARN | HTTP_LOG_FLAG_TRACE;
     NSString *json = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:message options:0 error:nil] encoding:NSUTF8StringEncoding];
     [self sendMessage:json];
 }
+
 
 @end

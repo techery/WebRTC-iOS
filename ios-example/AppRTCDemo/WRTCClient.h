@@ -26,5 +26,6 @@ typedef void (^SignallingEventCallback)(NSDictionary *signal);
 - (void)start;
 - (void)onSDPSet;
 - (void)on:(NSString*)eventName do:(SignallingEventCallback)callback;
+- (BOOL)isAudioEnabled;
 
 @end

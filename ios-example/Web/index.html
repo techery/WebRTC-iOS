@@ -5,11 +5,67 @@
 <script type="text/javascript" src="adapter.js"></script>
 <script type="text/javascript" src="crowdmics.js"></script>
 
+<style type="text/css" media="screen">
+
+body {
+	background:#282D3B;
+	color:#EFEBEF;
+	text-align:center;
+}
+
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width:100px;
+	height:100px;
+}
+
+#content {
+  width: 700px ;
+  margin-left: auto ;
+  margin-right: auto ;
+  margin-top:200px;
+}
+
+h1 {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+video {
+	background:#282D3B;
+	width:1px;
+	height:1px;
+}
+
+</style>
+
 </head>
 
 <body onload="start()">
 
-<div id="log" />
+<video id="video" autoplay="true" ></video>
+
+<div id="content">
+	<img src="/logo.png" id="logo"/>
+	<h1>Crowd Mics Voice Streamer</h1>
+	<p>
+		Turn on your speakers and allow voice commenting from mobile app.
+	</p>
+	
+	<div id="waiting_view">
+		<p>Waiting for voice chat</p>
+	</div>
+	
+	<div id="talking_view" style="display:none;">
+		<p>Active voice chat session</p>
+		<img src="ajax-loader.gif" />
+	</div>
+	
+</div>
 
 </body>
 </html>

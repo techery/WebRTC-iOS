@@ -8,6 +8,7 @@
 
 #import "WRTCClient.h"
 #import "SDPParser.h"
+#import "RTCAudioTrack.h"
 
 @interface WRTCClient () <SignallingChannelDelegate>
 
@@ -29,13 +30,12 @@
     if (self) {
         self.callbacks = [NSMutableDictionary new];
         [RTCPeerConnectionFactory initializeSSL];
+        
         self.signallingChannel = channel;
         self.signallingChannel.delegate = self;
         
         NSArray *mandatory = @[
-                               [[RTCPair alloc] initWithKey:@"OfferToReceiveAudio" value:@"true"],
-                               [[RTCPair alloc] initWithKey:@"googEchoCancellation" value:@"true"],
-                               [[RTCPair alloc] initWithKey:@"googAutoGainControl" value:@"true"],
+                               [[RTCPair alloc] initWithKey:@"OfferToReceiveAudio" value:@"true"]
                                ];
         
         NSArray *optional = @[[[RTCPair alloc] initWithKey:@"internalSctpDataChannels" value:@"true"],
@@ -110,9 +110,19 @@
                                                                      delegate:self.pcObserver];
     
     RTCMediaStream *lms = [peerConnectionFactory mediaStreamWithLabel:@"ARDAMS"];
-    [lms addAudioTrack:[peerConnectionFactory audioTrackWithID:@"ARDAMSa0"]];
+
+    RTCAudioTrack *audioTrack = [peerConnectionFactory audioTrackWithID:@"ARDAMSa0"];
+    
+    [audioTrack setEnabled:[self isAudioEnabled]];
+    
+    [lms addAudioTrack:audioTrack];
     
     [self.peerConnection addStream:lms constraints:self.constraints];
+}
+
+- (BOOL)isAudioEnabled
+{
+    return YES;
 }
 
 - (void)processCandidateMessage:(NSDictionary *)message {
@@ -120,7 +130,9 @@
                                                                 index:[message[@"sdpMLineIndex"] intValue]
                                                                   sdp:message[@"candidate"]];
     if (self.queuedRemoteCandidates) {
-        [self.queuedRemoteCandidates addObject:candidate];
+        @synchronized(self){
+            [self.queuedRemoteCandidates addObject:candidate];
+        }
     } else {
         [self.peerConnection addICECandidate:candidate];
     }
@@ -158,11 +170,13 @@
 }
 
 - (void)drainRemoteCandidates {
-    for (RTCICECandidate *candidate in self.queuedRemoteCandidates) {
-        [self.peerConnection addICECandidate:candidate];
+    @synchronized(self){
+        for (RTCICECandidate *candidate in self.queuedRemoteCandidates) {
+            [self.peerConnection addICECandidate:candidate];
+        }
+        
+        self.queuedRemoteCandidates = nil;
     }
-    
-    self.queuedRemoteCandidates = nil;
 }
 
 

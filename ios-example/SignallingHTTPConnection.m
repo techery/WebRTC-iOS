@@ -18,7 +18,7 @@ NSString * const kNewSocketConnected = @"kNewSocketConnected";
 		NSString *wsHost = [request headerField:@"Host"];
 		if (wsHost == nil) {
 			NSString *port = [NSString stringWithFormat:@"%hu", [asyncSocket localPort]];
-			wsLocation = [NSString stringWithFormat:@"ws://localhost:%@/signalling", port];
+			wsLocation = [NSString stringWithFormat:@"ws://localhost:%@/web_signalling", port];
 		} else {
 			wsLocation = [NSString stringWithFormat:@"ws://%@/service", wsHost];
 		}
