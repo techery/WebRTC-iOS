@@ -32,16 +32,8 @@
     return YES;
 }
 
-- (void)applicationWillResignActive:(UIApplication *)application
-{
-    UIBackgroundTaskIdentifier *bgTask = [[UIApplication sharedApplication] beginBackgroundTaskWithExpirationHandler:^{
-        
-    }];
-}
-
 - (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
 {
-    
     NSString *ip = [url host];
     
     self.client = [[WRTCSpeaker alloc] initWithSignallingChannel:[[WebSocketSignallingChannel alloc] initWithIP:ip delegate:nil]];
