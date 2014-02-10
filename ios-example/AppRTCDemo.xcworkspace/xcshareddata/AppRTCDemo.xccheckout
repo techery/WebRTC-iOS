@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9A157640-0306-4FA8-93F1-D27946034A39</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AppRTCDemo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BF9196E1-619F-4B4C-A4BE-D42520BAB51E</key>
+		<string>ssh://bitbucket.org/techery/webrtc-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios-example/AppRTCDemo.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BF9196E1-619F-4B4C-A4BE-D42520BAB51E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://bitbucket.org/techery/webrtc-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BF9196E1-619F-4B4C-A4BE-D42520BAB51E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BF9196E1-619F-4B4C-A4BE-D42520BAB51E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>webrtc-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>

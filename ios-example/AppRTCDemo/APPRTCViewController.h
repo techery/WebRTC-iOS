@@ -34,8 +34,6 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
-#import "RTCVideoRenderer.h"
-#import "VideoView.h"
 
 @interface APPRTCViewController : UIViewController
 
